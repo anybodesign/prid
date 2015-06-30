@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="ie ie8" lang="fr"> <![endif]-->
+<!--[if IE 9]> <html class="ie ie9" lang="fr"> <![endif]-->
+<!--[if gt IE 9]> <!--><html lang="us"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	
+	<title>CSS Prid’ : Anybodesign’s CSS Padding gRID, a tiny CSS grid.</title>
+	
+	<meta name="description" content="A light and simple CSS stylesheet to help you start any responsive web design project. Composed of a fluid responsive grid and some basic styles.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">
+
+	<link rel="stylesheet" href="css/prid.css" media="all">
+	<link rel="stylesheet" href="css/demo.css" media="all">
+
+	<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+       
+<div id="container">
+
+	<!--[if lte IE 9]><div id="ie"><p>Your browser should be <a href="http://browsehappy.com">updated</a> to improve your experience.</p></div><![endif]-->
+	
+	<header id="site_head" role="banner" class="row">
+		<div class="inner">
+
+			<div class="col-12 site-logo">
+				<h1 class="site-title">Prid’ : the padding grid</h1>
+				<h2 class="site-desc">A Responsive, yet tiny, CSS grid</h2>
+			</div>
+
+		</div>
+	</header>
+	
+	
+	<div id="content" role="contentinfo" class="row">
+		<div class="inner">
+			
+			
+			<div class="col-12 row-section" id="grid_layout">
+				<h2 class="section-title">Usage</h2>
+				
+				<p>Prid’ is based on a 12 columns layout. The gutters are handled with the columns' padding, no margin to worry about... </p>
+				
+				<h3 class="section-subtitle">Basic grids</h3>
+
+ 				<p>First, just add Prid' style sheet in the head section of your pages, before any other CSS styles. For example:</p>
+ 				
+ 				<pre>
+				&lt;link rel=&quot;stylesheet&quot; href=&quot;css/prid.min.css&quot; media=&quot;all&quot;&gt;
+				&lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot; media=&quot;all&quot;&gt;
+ 				</pre>
+
+ 				<p>For WordPress users, you may copy Prid's CSS file into your theme folder and enqueue it before the main stylesheet in your functions.php file.</p>
+ 				
+ 				<pre>
+				function add_css_styles() {
+					
+				&nbsp;&nbsp;	wp_register_style( 'prid', get_template_directory_uri() . '/css/prid.min.css', array(), '1.0', false );
+				&nbsp;&nbsp;	wp_enqueue_style( 'prid' );
+					
+				&nbsp;&nbsp;	wp_enqueue_style( 'style', get_stylesheet_uri(), array(), '1.0', false );
+				}    
+				add_action('wp_enqueue_scripts', 'add_css_styles');
+ 				</pre> 
+ 				
+ 				 				
+ 				<p>Don't forget to add the SVG sprite in a "img" folder (Or fix the links in the CSS sheets).</p>
+ 				<p>Then you can begin to construct your grid with <code>row</code> and <code>col-*</code> classes.
+	 			<br>Here is a very basic example:</p>
+
+				<pre>
+				&lt;header class=&quot;row&quot; id=&quot;site_header&quot;&gt;
+				&nbsp;&nbsp;    &lt;div class=&quot;col-12&quot;&gt;My Logo&lt;/div&gt;
+				&lt;/header&gt;					
+				
+				&lt;div class=&quot;row&quot; id=&quot;site_content&quot;&gt;
+				&nbsp;&nbsp;	&lt;div class=&quot;col-9&quot;&gt;My content&lt;/div&gt;
+				&nbsp;&nbsp;	&lt;div class=&quot;col-3&quot;&gt;My sidebar&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;footer class=&quot;row&quot; id=&quot;site_footer&quot;&gt;
+				&nbsp;&nbsp;	&lt;div class=&quot;col-12&quot;&gt;My legal terms&lt;/div&gt;
+				&lt;/footer&gt;
+				</pre> 				
+
+				<p>And here are some grids:</p>
+				
+				<div class="col-12 colparent row-section grid">
+					<div class="col-12"><p>col-12</p></div>
+					<div class="col-1"><p>col-1</p></div>
+					<div class="col-11"><p>col-11</p></div>
+					<div class="col-2"><p>col-2</p></div>
+					<div class="col-10"><p>col-10</p></div>
+					<div class="col-3"><p>col-3</p></div>
+					<div class="col-9"><p>col-9</p></div>
+					<div class="col-4"><p>col-4</p></div>
+					<div class="col-8"><p>col-8</p></div>
+					<div class="col-5"><p>col-5</p></div>
+					<div class="col-7"><p>col-7</p></div>
+				</div>
+				
+				<div class="col-12 colparent row-section grid second-grid">
+					<div class="col-6"><p>col-6</p></div>
+					<div class="col-6"><p>col-6</p></div>
+					<div class="col-4"><p>col-4</p></div>
+					<div class="col-4"><p>col-4</p></div>
+					<div class="col-4"><p>col-4</p></div>
+					<div class="col-3"><p>col-3</p></div>
+					<div class="col-3"><p>col-3</p></div>
+					<div class="col-3"><p>col-3</p></div>
+					<div class="col-3"><p>col-3</p></div>
+					<div class="col-2"><p>col-2</p></div>
+					<div class="col-2"><p>col-2</p></div>
+					<div class="col-2"><p>col-2</p></div>
+					<div class="col-2"><p>col-2</p></div>
+					<div class="col-2"><p>col-2</p></div>
+					<div class="col-2"><p>col-2</p></div>
+					<div class="col-1"><p>col-1</p></div>
+					<div class="col-1"><p>col-1</p></div>
+					<div class="col-1"><p>col-1</p></div>
+					<div class="col-1"><p>col-1</p></div>
+					<div class="col-1"><p>col-1</p></div>
+					<div class="col-1"><p>col-1</p></div>
+					<div class="col-1"><p>col-1</p></div>
+					<div class="col-1"><p>col-1</p></div>
+					<div class="col-1"><p>col-1</p></div>
+					<div class="col-1"><p>col-1</p></div>
+					<div class="col-1"><p>col-1</p></div>
+					<div class="col-1"><p>col-1</p></div>
+				</div>
+
+
+				
+			</div>
+			
+			
+			
+			<div class="col-12 row-section">
+				
+				<h3 class="section-subtitle">Nested columns</h3>
+				<p>Columns can be nested, you just have to add the class <code>colparent</code> to the parent column, so its padding is set to 0 to preserve global margins.</p>
+
+
+				<pre>
+				&lt;div class=&quot;row&quot;&gt;
+				
+				&nbsp;&nbsp;	&lt;div class=&quot;col-3&quot;&gt; col-3 &lt;/div&gt;
+				
+				&nbsp;&nbsp;	&lt;div class=&quot;col-9 colparent&quot;&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		&lt;div class=&quot;col-3&quot;&gt; col-3 &lt;/div&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		&lt;div class=&quot;col-6&quot;&gt; col-6 &lt;/div&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		&lt;div class=&quot;col-3&quot;&gt; col-3 &lt;/div&gt;
+				&nbsp;&nbsp;	&lt;/div&gt;
+				
+				&lt;/div&gt;
+				</pre>
+
+				<div class="col-12 colparent row-section grid">
+					<div class="col-3"><p>col-3</p></div>
+					<div class="col-9 colparent grid">
+						<div class="col-3"><p>col-3</p></div>
+						<div class="col-6"><p>col-6</p></div>
+						<div class="col-3"><p>col-3</p></div>
+					</div>
+				</div>
+				
+				
+				<h3 class="section-subtitle">Spaces</h3>
+				<p>You can add some left or right margins if needed. For example, add the class <code>left-1</code> if you want a 1 column left margin, or <code>right-2</code> if you want a 2 columns right-margin.</p>	
+
+				<pre>
+				&lt;div class=&quot;row&quot;&gt;
+				
+				&nbsp;&nbsp;	&lt;div class=&quot;col-2&quot;&gt; col-2 &lt;/div&gt;	
+				&nbsp;&nbsp;	&lt;div class=&quot;col-3 left-1&quot;&gt; col-3 + 1 col. left &lt;/div&gt;
+				&nbsp;&nbsp;	&lt;div class=&quot;col-3 right-1&quot;&gt; col-3 + 1 col. right &lt;/div&gt;
+				&nbsp;&nbsp;	&lt;div class=&quot;col-2&quot;&gt; col-2 &lt;/div&gt;
+				
+				&lt;/div&gt;	
+				</pre>	
+				
+				<div class="col-12 colparent row-section grid">
+					<div class="col-2"><p>col-2</p></div>
+					<div class="col-3 left-1"><p>col-3 + 1 col. left</p></div>
+					<div class="col-3 right-1"><p>col-3 + 1 col. right</p></div>
+					<div class="col-2"><p>col-2</p></div>
+				</div>
+
+						
+
+				<h3 class="section-subtitle">Fixed sizes</h3>	
+				<p>Columns can be set to different sized for small and medium widths. For example, use the class <code>smallhalf</code> to set the width of the column to 50% under 768px width. You can use as well <code>smallthird</code>, <code>small2third</code> and <code>smallquarter</code>. For medium widths only (between 768px and 480px for example) you can use <code>midhalf</code>, <code>midthird</code>, <code>mid2third</code> and <code>midquarter</code>. Breakpoints can of course be over riden.</p>			
+
+
+				<pre>
+				&lt;div class=&quot;row&quot;&gt;
+					
+				&nbsp;&nbsp;	&lt;div class=&quot;col-3 smallhalf&quot;&gt; col-3 min. 50% &lt;/div&gt;
+				&nbsp;&nbsp;	&lt;div class=&quot;col-3 smallhalf&quot;&gt; col-3 min. 50% &lt;/div&gt;
+				&nbsp;&nbsp;	&lt;div class=&quot;col-3 smallhalf&quot;&gt; col-3 min. 50% &lt;/div&gt;
+				&nbsp;&nbsp;	&lt;div class=&quot;col-3 smallhalf&quot;&gt; col-3 min. 50% &lt;/div&gt;
+				
+				&lt;/div&gt;	
+				</pre>
+				
+				<div class="col-12 colparent row-section grid">
+					<div class="col-3 smallhalf"><p>col-3 min. 50%</p></div>
+					<div class="col-3 smallhalf"><p>col-3 min. 50%</p></div>
+					<div class="col-3 smallhalf"><p>col-3 min. 50%</p></div>
+					<div class="col-3 smallhalf"><p>col-3 min. 50%</p></div>
+				</div>
+				
+			</div>
+
+
+
+
+
+			<div class="col-12 row-section" id="css_styles">
+				
+				<h2 class="section-title">CSS Styles</h2>
+				
+				<h3 class="section-subtitle">Images and caption</h3>
+				<p>Figure and figcaption management, fluid width images.</p>
+
+				<pre>
+				&lt;figure&gt;
+				
+				&nbsp;&nbsp;	&lt;img src=&quot;img/small-world.jpg&quot; alt=&quot;small world photo&quot; /&gt;
+				&nbsp;&nbsp;	&lt;figcaption&gt;Small world...&lt;/figcaption&gt;
+				
+				&lt;/figure&gt;
+				</pre>	
+				
+				<div class="col-12 colparent">
+					
+					<div class="col-6 right-2">
+						<figure>
+							<img src="img/small-world.jpg" alt="small world photo">
+							<figcaption>Small world...</figcaption>
+						</figure>
+					</div>
+					
+					<div class="col-4 second-figure">
+						<figure>
+							<img src="img/small-world.jpg" alt="small world photo">
+							<figcaption>Same small world... in a smaller place</figcaption>
+						</figure>
+					</div>
+				
+				</div>
+				
+				
+				<h3 class="section-subtitle">Forms</h3>
+				<p>Custom form design is also included in Prid’, including custom select, checkboxes and radio buttons. Just CSS, no JS :) But there's a special markup for the fields: </p>
+				<p>All labels and fields are wrapped in a container: <code>formfield-text</code> for inputs (text, date, password...) <code>formfield-textarea</code> for text areas.</p>
+
+				<pre>
+				&nbsp;&nbsp;				&lt;div class=&quot;formfield-text&quot;&gt; &lt;!-- Input field --&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;		&lt;label&gt;Text&lt;/label&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;		&lt;input type=&quot;text&quot;&gt;
+				&nbsp;&nbsp;				&lt;/div&gt;
+				
+				&nbsp;&nbsp;				&lt;div class=&quot;formfield-textarea&quot;&gt; &lt;!-- Text area --&gt;			 		
+				&nbsp;&nbsp;&nbsp;&nbsp;		&lt;label&gt;Textarea&lt;/label&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;		&lt;textarea&gt;&lt;/textarea&gt;
+				&nbsp;&nbsp;				&lt;/div&gt;												
+				</pre>				
+				
+				
+				<p>Select and input file need <code>formfield-select</code> or <code>formfield-file</code> as well as a second wrapper <code>formfield-select--container</code> or <code>formfield-file--container</code>.</p>
+				
+
+				<pre>
+				&nbsp;&nbsp;				&lt;div class=&quot;formfield-file&quot;&gt; &lt;!-- Input file --&gt;		 			
+				&nbsp;&nbsp;&nbsp;&nbsp;					&lt;label&gt;File&lt;/label&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			&lt;div class=&quot;formfield-file--container&quot;&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			&lt;input type=&quot;file&quot;&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			&lt;/div&gt;
+				&nbsp;&nbsp;				&lt;/div&gt;					
+								
+				&nbsp;&nbsp;				&lt;div class=&quot;formfield-select&quot;&gt; &lt;!-- Select --&gt;				
+				&nbsp;&nbsp;&nbsp;&nbsp;					&lt;label&gt;Select&lt;/label&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				&lt;div class=&quot;formfield-select--container&quot;&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				&lt;select&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			&lt;option value=&quot;your value&quot;&gt;Your value&lt;/option&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				&lt;/select&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;							&lt;/div&gt;
+				&nbsp;&nbsp;				&lt;/div&gt;
+				</pre>		
+				
+				<p>Same thing for checkboxes and radio buttons: <code>formfield-checkbox</code> or <code>formfield-radio</code> wrappers. <strong>The <code>For</code> attribute on the label is required.</strong></p>		 					 			
+
+				<pre>
+				&nbsp;&nbsp;							&lt;div class=&quot;formfield-checkbox&quot;&gt; &lt;!-- Checkbox --&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;					&lt;input type=&quot;checkbox&quot; id=&quot;checkbox1&quot; checked=&quot;checked&quot;&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;					&lt;label for=&quot;checkbox1&quot;&gt;Orange marmelade&lt;/label&gt;
+				&nbsp;&nbsp;							&lt;/div&gt;	
+				
+				&nbsp;&nbsp;							&lt;div class=&quot;formfield-radio&quot;&gt; &lt;!-- Radio button --&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;					&lt;input type=&quot;radio&quot; id=&quot;radiobtn2&quot;&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;					&lt;label for=&quot;radiobtn2&quot;&gt;Bacon and eggs&lt;/label&gt;
+				&nbsp;&nbsp;							&lt;/div&gt;	
+				</pre>
+				
+				<p>And here are the results:</p>
+					
+				
+				<div class="col-12 colparent">
+					
+					
+					<div class="col-6 typo">
+					
+						<fieldset>
+							<legend>Inputs, select and text areas</legend>
+							
+							<div class="formfield-text">
+								<label for="input">Text</label>
+								<input type="text" id="input" placeholder="Enter some infos there...">								</div>					
+		
+							<div class="formfield-textarea">					
+								<label for="textarea">Textarea</label>
+								<textarea id="textarea" placeholder="Once upon a time..."></textarea>
+							</div>					
+		
+							<div class="formfield-file">					
+								<label for="inputfile">File</label>
+								<div class="formfield-file--container">
+									<input type="file" id="inputfile">
+								</div>
+							</div>					
+							
+							<div class="formfield-select">					
+								<label for="select">Select</label>
+								<div class="formfield-select--container">
+									<select id="select">
+										<option value="Remember">Remember</option>
+										<option value="To buy">To buy</option>
+										<option value="Some bread">Some bread</option>
+										<option value="On the way home">On the way home</option>
+									</select>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+					
+					<div class="col-6 typo">
+
+						<fieldset>
+							<legend>Checkboxes</legend>
+							
+							<div class="formfield-checkbox">
+								<input type="checkbox" id="checkbox1" value="Orange marmelade" checked="checked">
+								<label for="checkbox1">Orange marmelade</label>
+							</div>
+							
+							<div class="formfield-checkbox">
+								<input type="checkbox" id="checkbox2" value="Sour cream">
+								<label for="checkbox2">Sour cream</label>
+							</div>
+							
+							<div class="formfield-checkbox">
+								<input type="checkbox" id="checkbox3" value="Hot coffee">
+								<label for="checkbox3">Hot coffee</label>
+							</div>
+							
+							<div class="formfield-checkbox">
+								<input type="checkbox" id="checkbox4" value="Roasted toast">
+								<label for="checkbox4">Roasted toast</label>
+							</div>	
+							
+						</fieldset>
+						
+						<fieldset>
+							<legend>Radio Buttons</legend>
+							
+							<div class="formfield-radio">
+								<input type="radio" name="radiosbtns" id="radiobtn" value="Fried beans" checked="checked">
+								<label for="radiobtn">Fried beans</label>
+							</div>
+							
+							<div class="formfield-radio">
+								<input type="radio" name="radiosbtns" id="radiobtn2" value="Bacon and eggs">
+								<label for="radiobtn2">Bacon and eggs</label>
+							</div>
+							
+						</fieldset>
+						
+						<fieldset>
+							<legend>Submit & Buttons</legend>
+							<div><button>Button</button></div>
+							<input type="submit" value="Submit"> <input type="reset" value="Reset">
+						</fieldset>
+					</div>
+
+				</div>
+				
+				
+				<h3 class="section-subtitle">Tables</h3>
+				<p>Prid' provides simple support for responsive tables, wrapping them into a container with the <code>table-container</code> class.</p>
+
+					<pre>
+						&lt;div class=&quot;table-container&quot;&gt;
+						
+						&nbsp;&nbsp;	&lt;table&gt;
+						&nbsp;&nbsp;	...
+						&nbsp;&nbsp;	&lt;/table&gt;
+						
+						&lt;/div&gt;
+					</pre>		
+				
+						 					 							
+					<div class="table-container">
+					<table width="100%" bgcolor="#fff">
+						<thead>
+							<tr>
+								<td>Animal</td>
+								<td>Name</td>
+								<td>Age</td>
+								<td>Weight</td>
+								<td>Hobby</td>
+								<td>Passion</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Cat</td>
+								<td>Prosper</td>
+								<td>11</td>
+								<td>8 kg</td>
+								<td>Sleeping</td>
+								<td>Food</td>
+							</tr>
+							<tr>
+								<td>Cat</td>
+								<td>Garfield</td>
+								<td>2</td>
+								<td>4 kg</td>
+								<td>Hunting</td>
+								<td>Food</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="6">That's all about cats now...</td>
+							</tr>
+						</tfoot>
+					</table>
+					</div>		
+					
+			</div>
+			
+			
+
+		</div>
+	</div>	<!-- End content -->
+		
+		
+		
+		
+
+	<footer id="site_foot" class="row">
+		<div class="inner">
+			
+			<div class="col-12 row-section">
+				<p>Made by Thomas Villain – <a href="http://anybodesign.com" title="graphic and web design workshop">anybodesign.com</a> – Photo : Thomas Villain, <i>Paris Gare de Lyon.</i><br>
+				This work is free. You can redistribute it and/or modify it under the terms of the <i>Do What The Fuck You Want To</i> Public License, Version 2, as published by Sam Hocevar. See <a href="http://www.wtfpl.net/">http://www.wtfpl.net/</a> for more details.</p>
+			</div>
+			
+		</div>
+	</footer>
+	
+
+</div>
+
+</body>
+</html>

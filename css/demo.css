@@ -1,0 +1,119 @@
+/* Styles for this demo page */
+
+/* Basics */
+
+body {
+	color: #444;
+	font-family: 'museo500', helvetica, arial, sans-serif; 
+ 	background: #e6e6e6 url(../img/bg-page.png) 0 0 repeat;
+}
+
+#container {}
+
+[class^="col-"] {
+	padding: 10px; /* The padding gutter ! */
+}
+
+.inner {
+	max-width: 980px; margin: 0 auto;
+}
+
+.row-section {
+	text-align: center;
+	padding: 1.5em 10px;
+}
+
+
+/* #Header
+================================================== */
+
+#site_head {
+	background-color: #fff;
+	text-align: center;
+	padding-top: 230px; padding-bottom: 20px;
+}
+
+.site-title, .site-desc {
+	text-align: center; margin: 0;
+	position: relative;
+} 
+.site-title {font-size: 1.8em; font-weight: bold;}
+
+.site-desc {
+	font-size: 1em; line-height: 1;
+	font-family: 'museo500', helvetica, arial, sans-serif; 
+	color: #8def12;	
+}
+
+.site-title:before {
+	content: ""; display: block; width: 290px; height: 180px;
+	position: absolute; left: 50%; margin-left: -145px; top: -190px;
+	background: url(../img/sprite.svg) 0 -65px no-repeat;
+}
+
+/* #Typo & Content
+================================================== */
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: #3c3c3c;
+	font-weight: normal; 
+	font-family: 'museo900ital', helvetica, arial, sans-serif;
+}
+
+.section-title {
+	display: inline-block;
+	padding: .75em;
+	border-bottom: #ccc 1px solid;
+	border-top: #ccc 1px solid;
+}
+
+.section-title, .section-subtitle {
+	text-shadow: 2px 2px #fff;
+}
+
+p, li, label, legend, blockquote {
+	font-family: 'museo500', helvetica, arial, sans-serif;
+}
+
+figcaption {
+ 	font-size: .85em;
+	font-family: 'museo500ital', helvetica, arial, sans-serif;
+}
+
+.grid, .typo {text-align: left;}
+
+.typo h1, .typo h2, .typo h3, .typo h4, .typo h5, .typo h6 {margin: 0; line-height: 1.5;}
+
+.grid {
+	margin: 1em 0;
+}
+
+.grid p {
+	background: #fff; 
+	padding: 10px; margin: 0;
+	border-radius: 4px; 
+	text-align: center;
+}
+
+.grid .grid {margin: 0;}
+
+.grid .grid p {
+	background: #8def12; color: #333; 
+} 
+	
+code {background-color: #fff; color: #8def12;}
+
+pre {
+	text-align: left;
+	background-color: #f6f6f6;
+}
+
+figure img {display: block; border: #fff 5px solid;}
+
+table {background-color: #fff;}
+
+
+@media screen and (max-width: 768px) {
+	.second-grid, .second-figure {display: none;}
+}

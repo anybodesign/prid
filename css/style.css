@@ -1,0 +1,63 @@
+/* Your awesome CSS styles! */
+
+
+/* 
+	Override The padding gutter 
+	
+[class^="col-"] {padding: 5px;}
+
+*/
+
+
+
+
+/* 
+	Override Prid's breakpoints 
+
+@media screen and (max-width: 768px) {
+
+	.col-1, .col-2, .col-3, 
+	.col-4, .col-5, .col-6, 
+	.col-7, .col-8, .col-9, 
+	.col-10, .col-11 {
+		width: 100%;
+	}
+	
+	.left-1, .left-2, .left-3, 
+	.left-4, .left-5, .left-6, 
+	.left-7, .left-8, .left-9, 
+	.left-10, .left-11 {
+		margin-left: 0;
+	}
+	
+	.right-1, .right-2, .right-3, 
+	.right-4, .right-5, .right-6, 
+	.right-7, .right-8, .right-9, 
+	.right-10, .right-11 {
+		margin-right: 0;
+	}
+
+
+	[class^="col-"].midquarter, [class^="col-"].smallquarter {width: 25%;}
+	
+	[class^="col-"].midhalf, [class^="col-"].smallhalf {width: 50%;}
+	
+	[class^="col-"].midthird, [class^="col-"].smallthird {width: 33.333%;}
+	
+	[class^="col-"].mid2third, [class^="col-"].small2third {width: 66.667%;}
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+	[class^="col-"].midhalf,
+	[class^="col-"].midquarter, 
+	[class^="col-"].midthird, 
+	[class^="col-"].mid2third {
+		width: 100%;
+	}
+
+}
+
+*/

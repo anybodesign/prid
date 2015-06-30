@@ -1,0 +1,122 @@
+-------------------------------------------------------
+Prid' : Anybodesign's Responsive Padding Grid 
+-------------------------------------------------------
+
+CHANGELOG_
+
+
+-------------------------------------------------------
+v1.0 : 2015, June 24th 
+
+- Added classes .midquarter and .smallquarter
+- Added class .error .xdebug-error
+- Deleted classes : col-1quarter, col-2quarter, col-half, col-1third, col-2third
+- Fixed letter spacing in <pre>
+- Updated typography styles
+- Updated form styles, added style for input file
+- Updated SVG file
+
+
+-------------------------------------------------------
+v0.9.7 : 2015, June 17th
+
+- Added style for password input type 
+
+
+-------------------------------------------------------
+v0.9.6 : 2015, May 6th
+
+- CSS fix on custom forms elements, allowing regular input style
+
+
+-------------------------------------------------------
+v0.9.5 : 2015, February 2nd
+
+- BIG CHANGE : 'push-' class renamed 'left-' and 'pull-' class renamed 'right-'
+- Removed 'halfhalf' class (use 'smallhalf' instead)
+- Changes on CSS reset and font sizes
+- Added blockquote style
+- Changed 'legend' style
+- SVG Sprite modified
+
+
+-------------------------------------------------------
+v0.9 : 2014, November 19th
+
+- BIG CHANGE : 'float' replaced with 'inline-block' ('.row' and '.col-')
+- CSS fix on table container (overflow)
+
+
+-------------------------------------------------------
+v0.8 : 2014, November 15th
+
+- Changes on typography level : margins, font sizes
+- Added custom form design with SVG sprite
+- Added table styles, with responsive support 
+
+
+-------------------------------------------------------
+v0.7.5 : 2014, October 1st
+
+- Added classes 'midhalf', 'midthird' and 'mid2third' for 768px breakpoint
+- Moved classes 'smallhalf', 'smallthird' and 'small2third' for 480px breakpoint
+
+
+-------------------------------------------------------
+v0.7 : 2014, September 18th
+
+- Added position relative to .row
+- Added class 'small2third'
+- Changed 'background' to 'background-color' for inputs
+
+
+-------------------------------------------------------
+v0.6.5 : 2014, July 10th
+
+- Removed 'div' from div[class^="col"] so we can use any html element as a column
+- Added 'address' element style
+- Fixed errors with h1-like, h2-like etc.
+
+
+-------------------------------------------------------
+v0.6 : 2014, June 26th
+
+- Added 'smallhalf' and 'smallthird' classes
+- Modified input type radio/checkbox alignment with labels
+
+
+-------------------------------------------------------
+v0.5 : 2014, May 26th
+
+- BIG CHANGE : '.col' class renamed '.col-'
+- BIG CHANGE : '.push' and '.pull' classes renamed '.push-' and '.pull-'
+- Removed float on '.col-12' element (causing weird behaviour with latest FF...)
+
+
+-------------------------------------------------------
+v0.4 : 2014, May 23th
+
+- Replaced 'col' class with : div[class^="col"]
+- Modified class 'halfhalf' and 'colparent'
+- Added project icon.png
+
+
+-------------------------------------------------------
+v0.3 : 2014, April 19th
+
+- Added 'pull' class 
+- Replaced max-width 768 styles by max-width 480 styles
+- Deleted 'float:none' on max-width 480 columns
+
+
+-------------------------------------------------------
+v0.2 : 2014, April 12th
+
+- Added clearfix on 'row' element
+- Added IE classes to the html tag
+
+
+-------------------------------------------------------
+v0.1 : 2014, March 27th
+
+- Prid's first public launch
