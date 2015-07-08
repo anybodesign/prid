@@ -6,6 +6,13 @@ CHANGELOG_
 
 
 -------------------------------------------------------
+v1.1 : 2015, July 8th 
+
+- Added margin-top: 0 for first child <p>
+- Fixed letter-spacing for webkit browsers
+
+
+-------------------------------------------------------
 v1.0 : 2015, June 24th 
 
 - Added classes .midquarter and .smallquarter

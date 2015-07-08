@@ -5,7 +5,7 @@
 	Url : http://anybodesign.com/
 	Project Url : http://lab.anybodesign.com/prid/
 	License : WTFPL http://www.wtfpl.net/
-	Version : 1.0
+	Version : 1.1
    ----------------------------------------------------------
 */
 
@@ -40,7 +40,7 @@ table {
 .row {
 	display: block;
 	text-align: left;
-	letter-spacing: -0.31em; 
+	letter-spacing: -0.251em; 
 	text-rendering: optimizespeed;
 }
 
@@ -58,7 +58,7 @@ table {
 	
 [class^="col-"].colparent {
 	padding: 0;
-	letter-spacing: -0.31em;
+	letter-spacing: -0.251em;
 }
 
 
@@ -210,7 +210,8 @@ h2:first-child,
 h3:first-child, 
 h4:first-child, 
 h5:first-child, 
-h6:first-child {
+h6:first-child,
+p:first-child {
     margin-top: 0;
 }
 
