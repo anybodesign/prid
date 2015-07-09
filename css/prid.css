@@ -5,7 +5,7 @@
 	Url : http://anybodesign.com/
 	Project Url : http://lab.anybodesign.com/prid/
 	License : WTFPL http://www.wtfpl.net/
-	Version : 1.1
+	Version : 1.2
    ----------------------------------------------------------
 */
 
@@ -40,12 +40,12 @@ table {
 .row {
 	display: block;
 	text-align: left;
-	letter-spacing: -0.251em; 
+	letter-spacing: -0.26em; 		/* @note: Androïd friendly */
 	text-rendering: optimizespeed;
 }
 
 [class^="col-"] {
-	padding: 5px; /* The padding gutter ! */
+	padding: 5px; 					/* @note: The padding gutter! */
 	display: inline-block;
 	vertical-align: top;
 	letter-spacing: normal;
@@ -58,49 +58,50 @@ table {
 	
 [class^="col-"].colparent {
 	padding: 0;
-	letter-spacing: -0.251em;
+/* 	letter-spacing: -0.251em; */
+	letter-spacing: -0.31em; 
 }
 
 
 /* Columns width, based on a 12 columns grid */
 
 
-.col-1 {width: 8.333%;}
-.col-2 {width: 16.667%;}
+.col-1 {width: 8.3333%;}
+.col-2 {width: 16.6667%;}
 .col-3 {width: 25%;}
-.col-4 {width: 33.333%;}
-.col-5 {width: 41.667%;}
+.col-4 {width: 33.3333%;}
+.col-5 {width: 41.6667%;}
 .col-6 {width: 50%;}
-.col-7 {width: 58.333%;}
-.col-8 {width: 66.667%;}
+.col-7 {width: 58.3333%;}
+.col-8 {width: 66.6667%;}
 .col-9 {width: 75%;}
-.col-10 {width: 83.333%;}
-.col-11 {width: 91.667%;}
+.col-10 {width: 83.3333%;}
+.col-11 {width: 91.6667%;}
 .col-12 {width: 100%;}
 
-.left-1 {margin-left: 8.333%;}
-.left-2 {margin-left: 16.667%;}
+.left-1 {margin-left: 8.3333%;}
+.left-2 {margin-left: 16.6667%;}
 .left-3 {margin-left: 25%;}
-.left-4 {margin-left: 33.333%;}
-.left-5 {margin-left: 41.667%;}
+.left-4 {margin-left: 33.3333%;}
+.left-5 {margin-left: 41.6667%;}
 .left-6 {margin-left: 50%;}
-.left-7 {margin-left: 58.333%;}
-.left-8 {margin-left: 66.667%;}
+.left-7 {margin-left: 58.3333%;}
+.left-8 {margin-left: 66.6667%;}
 .left-9 {margin-left: 75%;}
 .left-10 {margin-left: 83.333%;}
-.left-11 {margin-left: 91.667%;}
+.left-11 {margin-left: 91.6667%;}
 
-.right-1 {margin-right: 8.333%;}
-.right-2 {margin-right: 16.667%;}
+.right-1 {margin-right: 8.3333%;}
+.right-2 {margin-right: 16.6667%;}
 .right-3 {margin-right: 25%;}
-.right-4 {margin-right: 33.333%;}
-.right-5 {margin-right: 41.667%;}
+.right-4 {margin-right: 33.3333%;}
+.right-5 {margin-right: 41.6667%;}
 .right-6 {margin-right: 50%;}
-.right-7 {margin-right: 58.333%;}
-.right-8 {margin-right: 66.667%;}
+.right-7 {margin-right: 58.3333%;}
+.right-8 {margin-right: 66.6667%;}
 .right-9 {margin-right: 75%;}
-.right-10 {margin-right: 83.333%;}
-.right-11 {margin-right: 91.667%;}
+.right-10 {margin-right: 83.3333%;}
+.right-11 {margin-right: 91.6667%;}
 
 
 
@@ -121,8 +122,8 @@ table {
 	
 	[class^="col-"].midquarter, [class^="col-"].smallquarter {width: 25%;}
 	[class^="col-"].midhalf, [class^="col-"].smallhalf {width: 50%;}
-	[class^="col-"].midthird, [class^="col-"].smallthird {width: 33.333%;}
-	[class^="col-"].mid2third, [class^="col-"].small2third {width: 66.667%;}
+	[class^="col-"].midthird, [class^="col-"].smallthird {width: 33.3333%;}
+	[class^="col-"].mid2third, [class^="col-"].small2third {width: 66.6667%;}
 
 }
 
@@ -136,6 +137,7 @@ table {
 	[class^="col-"].midthird, 
 	[class^="col-"].mid2third {
 		width: 100%;
+		display: block;
 	}
 
 }
@@ -169,38 +171,38 @@ pre,
 td, th, 
 textarea,
 label, figcaption, hgroup, address {
-    font-size: 1em; /* equiv 16px */
+    font-size: 1em; 			/* equiv 16px */
     line-height: 1.5;
     margin: 1.5em 0;
 }
 
 h1, .h1-like {
-    font-size:  1.75em; /* equiv 28px */
+    font-size:  1.75em; 		/* @note: 28px */
     line-height: 1.7142;
     margin:  1.7142em 0 .8571em 0;
 }
 h2, .h2-like {
-    font-size:  1.625em; /* equiv 26px */
+    font-size:  1.625em; 		/* @note: 26px */
     line-height: 1.8462;
     margin:  1.8462em 0 .9231em 0;
 }
 h3, .h3-like {
-    font-size:  1.5em; /* equiv 24px */
+    font-size:  1.5em; 			/* @note: 24px */
     line-height:  1;
     margin:  2em 0  1em 0;
 }
 h4, .h4-like {
-    font-size:  1.375em; /* equiv 22px */
+    font-size:  1.375em; 		/* @note: 22px */
     line-height:  1.0909;
     margin:  2.1818em 0  1.0909em 0;
 }
 h5, .h5-like {
-    font-size:  1.25em; /* equiv 20px */
+    font-size:  1.25em; 		/* @note: 20px */
     line-height:  1.2;
     margin:  2.4em 0  1.2em 0;
 }
 h6, .h6-like {
-    font-size:  1.125em; /* equiv 18px */
+    font-size:  1.125em; 		/* @note: 18px */
     line-height:  1.3333;
     margin:  2.6666em 0  1.3333em 0;
 }

@@ -6,9 +6,15 @@ CHANGELOG_
 
 
 -------------------------------------------------------
+v1.2 : 2015, July 9th 
+
+- Fixed letter-spacing for androïd
+
+
+-------------------------------------------------------
 v1.1 : 2015, July 8th 
 
-- Added margin-top: 0 for first child <p>
+- Added 'margin-top: 0' for first child <p>
 - Fixed letter-spacing for webkit browsers
 
 
