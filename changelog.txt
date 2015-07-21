@@ -6,9 +6,18 @@ CHANGELOG_
 
 
 -------------------------------------------------------
+v1.3 : 2015, July 20th 
+
+- Added custom dropdown support for IE 10-11 
+- Changed typography margins
+- Removed hyphens and word-break (IE bug with white-space: nowrap)
+
+
+-------------------------------------------------------
 v1.2 : 2015, July 9th 
 
 - Fixed letter-spacing for androïd
+- Added input type number
 
 
 -------------------------------------------------------
