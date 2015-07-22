@@ -358,6 +358,16 @@ fieldset {
 input[type="text"], 
 input[type="email"], 
 input[type="tel"], 
+input[type="password"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;	
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
 input[type="date"],
 input[type="password"],
 input[type="file"],
@@ -374,6 +384,7 @@ select {
 	background-color: #fff;
 	font-size: .9em;
 	outline: none;
+	font-family: sans-serif;
 }
 textarea {
 	min-height: 90px;
@@ -398,6 +409,12 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 }
 input[type="checkbox"] + label, input[type="radio"] + label {
 	margin: 0 0 4px 3px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    right: 6px; font-size: 20px;
+    cursor: pointer;
 }
 
 label, legend {
