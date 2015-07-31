@@ -6,6 +6,12 @@ CHANGELOG_
 
 
 -------------------------------------------------------
+v1.4 : 2015, July 31th 
+
+- Changed [class^="col-"] for [class*="col-"]
+
+
+-------------------------------------------------------
 v1.3 : 2015, July 20th 
 
 - Added custom dropdown support for IE 10-11
