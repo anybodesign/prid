@@ -6,6 +6,12 @@ CHANGELOG_
 
 
 -------------------------------------------------------
+v1.5 : 2015, August 27th 
+
+- Changed fixed width rules to be able to set a mid width and a different small width
+
+
+-------------------------------------------------------
 v1.4 : 2015, July 31th 
 
 - Changed [class^="col-"] for [class*="col-"]

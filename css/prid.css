@@ -5,7 +5,7 @@
 	Url: http://anybodesign.com/
 	Project Url: http://lab.anybodesign.com/prid/
 	License: WTFPL http://www.wtfpl.net/
-	Version: 1.4
+	Version: 1.5
    ----------------------------------------------------------
 */
 
@@ -119,10 +119,10 @@ table {
 	
 	/* permanent size columns */
 	
-	[class*="col-"].midquarter, [class*="col-"].smallquarter {width: 25%;}
-	[class*="col-"].midhalf, [class*="col-"].smallhalf {width: 50%;}
-	[class*="col-"].midthird, [class*="col-"].smallthird {width: 33.3333%;}
-	[class*="col-"].mid2third, [class*="col-"].small2third {width: 66.6667%;}
+	[class*="col-"].midquarter {width: 25%;}
+	[class*="col-"].midhalf {width: 50%;}
+	[class*="col-"].midthird {width: 33.3333%;}
+	[class*="col-"].mid2third {width: 66.6667%;}
 
 }
 
@@ -131,13 +131,10 @@ table {
 
 @media screen and (max-width: 480px) {
 
-	[class*="col-"].midhalf,
-	[class*="col-"].midquarter, 
-	[class*="col-"].midthird, 
-	[class*="col-"].mid2third {
-		width: 100%;
-		display: block;
-	}
+	[class*="col-"].smallquarter {width: 25%;}
+	[class*="col-"].smallhalf {width: 50%;}
+	[class*="col-"].smallthird {width: 33.3333%;}
+	[class*="col-"].small2third {width: 66.6667%;}
 
 }
 
