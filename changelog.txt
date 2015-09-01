@@ -6,6 +6,12 @@ CHANGELOG_
 
 
 -------------------------------------------------------
+v1.5.1 : 2015, September 1st 
+
+- Fixed print issue with FireFox
+
+
+-------------------------------------------------------
 v1.5 : 2015, August 27th 
 
 - Changed fixed width rules to be able to set a mid width and a different small width
