@@ -6,6 +6,12 @@ CHANGELOG_
 
 
 -------------------------------------------------------
+v1.6 : 2015, October 6th 
+
+- Changed font sizesa nd margins
+
+
+-------------------------------------------------------
 v1.5.1 : 2015, September 1st 
 
 - Fixed print issue with FireFox
