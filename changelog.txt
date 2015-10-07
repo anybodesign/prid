@@ -6,6 +6,12 @@ CHANGELOG_
 
 
 -------------------------------------------------------
+v1.6.1 : 2015, October 7th 
+
+- Fixed letter-spacing on rows
+
+
+-------------------------------------------------------
 v1.6 : 2015, October 6th 
 
 - Changed font sizesa nd margins

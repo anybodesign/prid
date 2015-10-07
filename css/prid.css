@@ -5,7 +5,7 @@
 	Url: http://anybodesign.com/
 	Project Url: http://lab.anybodesign.com/prid/
 	License: WTFPL http://www.wtfpl.net/
-	Version: 1.6
+	Version: 1.6.1
    ----------------------------------------------------------
 */
 
@@ -40,7 +40,7 @@ table {
 .row {
 	display: block;
 	text-align: left;
-	letter-spacing: -0.26em; 		/* @note: Androïd friendly */
+	letter-spacing: -0.31em;
 	text-rendering: optimizespeed;
 }
 
@@ -58,7 +58,7 @@ table {
 	
 [class*="col-"].colparent {
 	padding: 0;
-	letter-spacing: -0.26em; 
+	letter-spacing: -0.31em; 
 }
 
 
