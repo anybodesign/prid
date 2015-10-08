@@ -6,6 +6,13 @@ CHANGELOG_
 
 
 -------------------------------------------------------
+v1.6.2 : 2015, October 8th 
+
+- Added .midfull and .smallfull classes
+- Modified IE warning banner  
+
+
+-------------------------------------------------------
 v1.6.1 : 2015, October 7th 
 
 - Fixed letter-spacing on rows

@@ -5,7 +5,7 @@
 	Url: http://anybodesign.com/
 	Project Url: http://lab.anybodesign.com/prid/
 	License: WTFPL http://www.wtfpl.net/
-	Version: 1.6.1
+	Version: 1.6.2
    ----------------------------------------------------------
 */
 
@@ -107,15 +107,23 @@ table {
 /* The padding grid - Responsive stuff
 ================================================== */
 
-
-/* Tablets portrait and smaller */
-
 @media screen and (max-width: 768px) {
 
-	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 {width: 100%;}
-	.left-1, .left-2, .left-3, .left-4, .left-5, .left-6, .left-7, .left-8, .left-9, .left-10, .left-11 {margin-left: 0;}
-	.right-1, .right-2, .right-3, .right-4, .right-5, .right-6, .right-7, .right-8, .right-9, .right-10, .right-11 {margin-right: 0;}
-	
+	.col-1, .col-2, .col-3, .col-4, 
+	.col-5, .col-6, .col-7, .col-8, 
+	.col-9, .col-10, .col-11 {
+		width: 100%;
+	}
+	.left-1, .left-2, .left-3, .left-4, 
+	.left-5, .left-6, .left-7, .left-8, 
+	.left-9, .left-10, .left-11 {
+		margin-left: 0;
+	}
+	.right-1, .right-2, .right-3, .right-4, 
+	.right-5, .right-6, .right-7, .right-8, 
+	.right-9, .right-10, .right-11 {
+		margin-right: 0;
+	}
 	
 	/* permanent size columns */
 	
@@ -123,11 +131,9 @@ table {
 	[class*="col-"].midhalf {width: 50%;}
 	[class*="col-"].midthird {width: 33.3333%;}
 	[class*="col-"].mid2third {width: 66.6667%;}
+	[class*="col-"].midfull {width: 100%;}
 
 }
-
-
-/* Smartphones landscape and smaller */
 
 @media screen and (max-width: 480px) {
 
@@ -135,6 +141,7 @@ table {
 	[class*="col-"].smallhalf {width: 50%;}
 	[class*="col-"].smallthird {width: 33.3333%;}
 	[class*="col-"].small2third {width: 66.6667%;}
+	[class*="col-"].smallfull {width: 100%;}
 
 }
 
@@ -553,10 +560,24 @@ input[type="submit"]:hover {
 /* IE 9 and less alert banner 
 ================================================== */
 
-#ie {background: #8def12 url(../img/ie.png) 0 50% no-repeat; margin-bottom: 15px; min-height: 105px;}
-#ie p {color: #000; padding: 15px 0 15px 110px; font-size: 2.6em; line-height: 1em;}
-#ie p a {color: #000;}
 
+#ie {
+	text-align: center; padding: 10px;
+}
+#ie div {
+	display: block; zoom: 1; /* IE 7 */
+	display: inline-block; 
+	background: #c0c0c0 url(../img/ie.png) 15px 50% no-repeat; 
+	padding: 15px; height: 105px; width: 500px;
+}
+#ie p {
+	color: #333; padding: 20px 0 15px 110px; 
+	font-size: 1.2em; line-height: 1;
+	text-align: left;
+}
+#ie p a {
+	color: #333;
+}
 
 
 /* Print styles 
