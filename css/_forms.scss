@@ -13,7 +13,9 @@ fieldset {
 input[type="text"], 
 input[type="email"], 
 input[type="tel"], 
+input[type="url"], 
 input[type="password"],
+input[type="search"],
 textarea {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -23,10 +25,12 @@ textarea {
 input[type="text"], 
 input[type="email"], 
 input[type="tel"], 
+input[type="url"],
 input[type="date"],
 input[type="password"],
 input[type="file"],
 input[type="number"],
+input[type="search"],
 textarea, 
 select {
 	display: block;

@@ -5,6 +5,13 @@ Prid' : Anybodesign's Responsive Padding Grid
 CHANGELOG_
 
 -------------------------------------------------------
+v1.7 : 2016, January 27th 
+
+- Added support for HTML5 inputs : url, search
+- Changed the grid padding unit to em
+
+
+-------------------------------------------------------
 v1.6.3 : 2016, January 25th 
 
 - Added .mid3quarter and .small3quarter classes

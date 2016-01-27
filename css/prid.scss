@@ -1,11 +1,11 @@
-/*
+/*!
    ----------------------------------------------------------
 	Prid': Anybodesign's Responsive Padding Grid
 	Author: Thomas Villain at Anybodesign Workshop
 	Url: http://anybodesign.com/
 	Project Url: http://lab.anybodesign.com/prid/
 	License: WTFPL http://www.wtfpl.net/
-	Version: 1.6.3
+	Version: 1.7
    ----------------------------------------------------------
 */
 
@@ -20,15 +20,17 @@
 
 // Rows & Columns
 
+$grid-padding: 0.3125em;
+
 .row {
 	display: block;
 	text-align: left;
-	letter-spacing: -0.31em;
+	letter-spacing: -$grid-padding;
 	text-rendering: optimizespeed;
 }
 
 [class*="col-"] {
-	padding: 5px; // @note: The padding gutter!
+	padding: $grid-padding; // @note: The padding gutter! euiv. 5px
 	display: inline-block;
 	vertical-align: top;
 	letter-spacing: normal;
@@ -39,7 +41,7 @@
 	
 	&.colparent {
 		padding: 0;
-		letter-spacing: -0.31em;
+		letter-spacing: -$grid-padding;
 	}
 }
 
