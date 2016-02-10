@@ -4,6 +4,13 @@ Prid' : Anybodesign's Responsive Padding Grid
 
 CHANGELOG_
 
+
+-------------------------------------------------------
+v1.7.1 : 2016, February 10th 
+
+- End of IE 8 support
+
+
 -------------------------------------------------------
 v1.7 : 2016, January 27th 
 

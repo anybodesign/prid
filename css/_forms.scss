@@ -215,25 +215,3 @@ input[type="submit"]:hover {
 	position: absolute; top: 50%; margin-top: -10px; right: 10px;
 	z-index: 100;
 }
-
-
-// IE 8 Forms fallback
-
-
-.ie8 .formfield-select--container:before,
-.ie8 .formfield-radio input[type="radio"] + label:before,
-.ie8 .formfield-checkbox input[type="checkbox"] + label:before {
-	background-image: none;
-}
-
-.ie8 .formfield-radio input[type="radio"],
-.ie8 .formfield-checkbox input[type="checkbox"] {
-	visibility: visible; position: relative; top: 0; left: 0;
-}
-
-.ie8 .formfield-radio input[type="radio"] + label,
-.ie8 .formfield-checkbox input[type="checkbox"] + label {
-	padding: 0;
-}
-
-.formfield-select--container select {width: 100%;}
