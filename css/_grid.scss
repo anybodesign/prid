@@ -10,11 +10,11 @@
 
 $grid-padding: 0.3125em; 	// @note: The padding gutter! equiv. 5px
 
-$tiny-width: 22.563em; 		// @note: 361px
-$small-width: 30.063em; 	// @note: 481px
-$medium-width: 48.063em;	// @note: 769px
-$large-width: 60.063em; 	// @note: 961px
-$wide-width: 75.063em; 		// @note: 1201px
+$width-tiny: 22.563em; 		// @note: 361px
+$width-small: 30.063em; 	// @note: 481px
+$width-medium: 48.063em;	// @note: 769px
+$width-large: 60.063em; 	// @note: 961px
+$width-wide: 75.063em; 		// @note: 1201px
 
 
 // Rows & Columns
@@ -67,7 +67,7 @@ $wide-width: 75.063em; 		// @note: 1201px
 //  Special Widths
 
 
-@media screen and (max-width: $medium-width) {
+@media screen and (max-width: $width-medium) {
 
 	[class*="col-"].smallquarter {width: 25%;}
 	[class*="col-"].smallhalf {width: 50%;}
@@ -78,7 +78,7 @@ $wide-width: 75.063em; 		// @note: 1201px
 
 }
 
-@media screen and (min-width: $small-width) and (max-width: $medium-width) {
+@media screen and (min-width: $width-small) and (max-width: $width-medium) {
 
 	[class*="col-"].midquarter {width: 25%;}
 	[class*="col-"].midhalf {width: 50%;}
@@ -93,7 +93,7 @@ $wide-width: 75.063em; 		// @note: 1201px
 // Desktop 
 
 
-@media screen and (min-width: $medium-width) {
+@media screen and (min-width: $width-medium) {
 
 
 	// Columns Widths 
