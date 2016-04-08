@@ -9,14 +9,17 @@
 
 
 html {
-	font-size: 62.5%;
-	-webkit-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
+	font-size: 100%;
+	
+	@media screen and (min-width: $large-width) {
+		font-size: 112.5%;
+	}
 }
 
 body {
-	font-size: 1.5em; line-height: 1.5;
+	font-family: sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
 }
 
 
@@ -74,8 +77,16 @@ li ul {
     margin-bottom: 0;
 }
 
-a {color: inherit;}
-a:hover {text-decoration: none;}
+em, i {font-style: italic;}
+strong, b {font-weight: bolder;}
+
+a {
+	color: inherit;
+	background-color: transparent;
+}
+a:hover {
+	text-decoration: none;
+}
 
 blockquote, q {
 	padding: .75em 0 .75em 1.5em;
@@ -83,15 +94,27 @@ blockquote, q {
 	font-style: italic;
 }
 
-blockquote small:before, q small:before {content: "– ";}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
 
-em, i {font-style: italic;}
-strong, b {font-weight: bold;}
+mark {
+  background-color: #ff0;
+  color: #000;
+}
 
-
-sup, sub {vertical-align: 0; position: relative;}
-sup {bottom: 1ex;}
-sub {top: .5ex;}
+small {
+  font-size: 75%;
+}
 
 
 // Code stuff
@@ -101,6 +124,7 @@ code, pre, samp, kbd {
 	white-space: pre-line; // IE fix
 	white-space: pre-wrap;
 	font-family: 'Andale Mono', 'DejaVu Sans Mono', Courier, monospace;
+	font-size: 1em;
 	line-height: 1;
 }
 
@@ -150,6 +174,12 @@ textarea, input, video {
 // Images
 
 
+img {
+	height: auto;
+	border: 0;
+	border-style: none;
+}
+
 figure {
 	overflow: hidden;
 }
@@ -161,7 +191,6 @@ figcaption {
 	font-size: .85em; line-height: 1;
 	margin: .5em 0;
 }
-img {height: auto;}
 
 
 // Tables
@@ -195,32 +224,13 @@ li ul, li ol {
 }
 
 
-
-/* ------------------------------
-//
-//  IE 9 and less alert banner
-// 
-// ------------------------------ */
+// Misc
 
 
-#ie {
-
-	text-align: center;
-
-	div {
-		display: block; zoom: 1; // IE 7
-		display: inline-block; 
-		background: #c0c0c0 url(../img/ie.png) 15px 50% no-repeat; 
-		padding: 15px; height: 105px; width: 500px;
-		
-		p {
-			color: #333; padding: 20px 0 15px 110px; 
-			font-size: 1.2em; line-height: 1;
-			text-align: left;
-			
-			a {color: #333;}
-		}
-	}
+hr {
+  box-sizing: content-box;
+  height: 0; 
+  overflow: visible;
 }
 
 

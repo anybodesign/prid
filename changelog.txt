@@ -6,6 +6,15 @@ CHANGELOG_
 
 
 -------------------------------------------------------
+v1.8 : 2016, April 8th 
+
+- Prid' grid is now mobile first
+- Separated Sass files : reset, grid, basics, forms
+- Minor typographic improvment
+- Removed IE alert banner
+
+
+-------------------------------------------------------
 v1.7.1 : 2016, February 10th 
 
 - End of IE 8 support
