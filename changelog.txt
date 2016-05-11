@@ -6,6 +6,12 @@ CHANGELOG_
 
 
 -------------------------------------------------------
+v1.8.5 : 2016, May 10th 
+
+- Added '.mid-12' to '.mid-1' and '.small-12' to '.small-1' classes, in addition to .midhalf, .smallhalf…
+
+
+-------------------------------------------------------
 v1.8 : 2016, April 8th 
 
 - Prid' grid is now mobile first
